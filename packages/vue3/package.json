@@ -3,11 +3,11 @@
   "version": "0.0.2-alpha.0",
   "main": "index.js",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@x-grind/core": "^0.0.2-alpha.0",
     "lodash": "^4.17.21"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
