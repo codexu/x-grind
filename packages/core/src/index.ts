@@ -1,3 +1,3 @@
-export default {
-  test: 'eslint test',
-};
+export default function core(): string {
+  return 'grind';
+}

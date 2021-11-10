@@ -1,12 +1,14 @@
 {
   "name": "@x-grind/core",
   "version": "0.0.2-alpha.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "lodash": "^4.17.21"
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development rollup -c rollup.config.js",
+    "build": "cross-env NODE_ENV=production rollup -c rollup.config.js"
   }
 }

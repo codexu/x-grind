@@ -7,7 +7,6 @@
     "access": "public"
   },
   "dependencies": {
-    "@x-grind/core": "^0.0.2-alpha.0",
-    "lodash": "^4.17.21"
+    "@x-grind/core": "^0.0.2-alpha.0"
   }
 }
