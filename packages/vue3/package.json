@@ -1,6 +1,6 @@
 {
   "name": "@x-grind/vue3",
-  "version": "0.0.6-alpha.0",
+  "version": "0.0.7-alpha.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/vue3/src/App.vue.d.ts",
@@ -13,7 +13,7 @@
     "build": "cross-env NODE_ENV=production rollup -c rollup.config.js"
   },
   "dependencies": {
-    "@x-grind/core": "^0.0.6-alpha.0",
+    "@x-grind/core": "^0.0.7-alpha.0",
     "vue": "^3.2.21"
   }
 }
