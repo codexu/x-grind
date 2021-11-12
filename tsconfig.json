@@ -1,19 +1,17 @@
 {
   "compilerOptions": {
-    "lib": ["ES2019"],
-    "module": "commonjs",
+    "module": "ESNext",
     "removeComments": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-    "target": "ES2019",
+    "target": "ESNext",
     "strict": true,
     "rootDir": "packages",
     "outDir": "dist"
   },
-  "include": ["packages/**/*.ts"],
   "exclude": [
     "node_modules/**/*",
     ".vscode/**/*",

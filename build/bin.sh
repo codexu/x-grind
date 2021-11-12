@@ -11,6 +11,10 @@ fi
 # 进入 package 目录
 cd ./packages
 
-# core 要第一个打包
+# 打包 core
 cd ./core
+yarn "$buildType"
+
+# vue3
+cd ../vue3
 yarn "$buildType"

@@ -1,3 +1,7 @@
-export default function core(): string {
-  return 'grind';
+const name = 'grind';
+
+function core(): string {
+  return name;
 }
+
+export { core, name };
