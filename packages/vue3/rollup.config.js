@@ -1,4 +1,4 @@
-import { createRollupConfig, IS_PROD } from '../../build/create'
+import { createRollupConfig } from '../../build/create'
 import pkg from './package.json'
 
 const name = 'GrindForVue3'
@@ -6,28 +6,16 @@ const name = 'GrindForVue3'
 const configList = []
 
 const esmConf = createRollupConfig({
+  input: './src/App.vue',
   output: {
-    file: pkg.main,
-    format: 'umd',
+    file: pkg.module,
+    format: 'esm',
     name,
+    globals: {
+      'vue': 'Vue',
+    },
   },
 })
 configList.push(esmConf)
-
-if (IS_PROD) {
-  // umd
-  const umdConf = createRollupConfig({
-    input: './src/App.vue',
-    output: {
-      file: pkg.module,
-      format: 'esm',
-      name,
-      globals: {
-        'vue': 'Vue',
-      },
-    },
-  })
-  configList.push(umdConf)
-}
 
 export default configList
