@@ -17,6 +17,7 @@ configList.push(esmConf)
 if (IS_PROD) {
   // umd
   const umdConf = createRollupConfig({
+    input: './src/App.vue',
     output: {
       file: pkg.module,
       format: 'esm',
