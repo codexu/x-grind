@@ -1,12 +1,12 @@
 {
   "name": "@x-grind/vue",
-  "version": "0.0.4-alpha.0",
+  "version": "0.0.6-alpha.0",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@x-grind/core": "^0.0.4-alpha.0"
+    "@x-grind/core": "^0.0.6-alpha.0"
   }
 }
