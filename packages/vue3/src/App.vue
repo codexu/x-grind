@@ -1,16 +1,15 @@
 <template>
   <div>{{ grind }}</div>
+  <p>{{ props.name }}</p>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref } from "vue";
+<script lang="ts" setup>
+import { ref, defineProps } from "vue";
 import { core } from '@x-grind/core';
 
-export default defineComponent({
-  name: "Grind",
-  setup() {
-    const grind = ref(core());
-    return { grind }
-  }
-});
+const props = defineProps<{
+  name: string
+}>()
+
+const grind = ref(core());
 </script>
