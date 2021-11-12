@@ -11,7 +11,7 @@ import { ref, defineProps } from "vue";
 import { core } from '@x-grind/core';
 
 interface Props {
-  msg?: string
+  name?: string
   labels?: string[]
 }
 
