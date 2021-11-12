@@ -1,4 +1,4 @@
-const name = 'grind';
+const name = 'grind -2';
 
 function core(): string {
   return name;
