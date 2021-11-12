@@ -1,7 +1,9 @@
 <template>
-  <div>{{ grind }}</div>
-  <p>{{ props.name }}</p>
-  <p>{{ props.labels }}</p>
+  <div>
+    <div>{{ grind }}</div>
+    <p>{{ props.name }}</p>
+    <p>{{ props.labels }}</p>
+  </div>
 </template>
 
 <script lang="ts" setup>
