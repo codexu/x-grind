@@ -3,15 +3,17 @@ import pkg from './package.json'
 
 const name = 'GrindCore'
 
-const configList = []
-
-const esmConf = createRollupConfig({
-  output: {
-    file: pkg.module,
-    format: 'esm',
-    name,
-  },
+export default createRollupConfig({
+  output: [
+    {
+      file: pkg.module,
+      format: 'esm',
+      name,
+    },
+    {
+      file: pkg.main,
+      format: 'umd',
+      name,
+    }
+  ]
 })
-configList.push(esmConf)
-
-export default configList

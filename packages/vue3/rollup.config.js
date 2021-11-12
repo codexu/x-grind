@@ -3,19 +3,18 @@ import pkg from './package.json'
 
 const name = 'GrindForVue3'
 
-const configList = []
-
-const esmConf = createRollupConfig({
+export default createRollupConfig({
   input: './src/App.vue',
-  output: {
-    file: pkg.module,
-    format: 'esm',
-    name,
-    globals: {
-      'vue': 'Vue',
+  output: [
+    {
+      file: pkg.main,
+      format: 'umd',
+      name,
     },
-  },
+    {
+      file: pkg.module,
+      format: 'esm',
+      name,
+    },
+  ]
 })
-configList.push(esmConf)
-
-export default configList

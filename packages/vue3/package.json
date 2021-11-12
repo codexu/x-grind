@@ -3,7 +3,7 @@
   "version": "0.0.6-alpha.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
-  "types": "dist/vue3/src/index.d.ts",
+  "types": "dist/vue3/src/App.vue.d.ts",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
